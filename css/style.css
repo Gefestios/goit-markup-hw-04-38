@@ -1,0 +1,418 @@
+/* Универсальный селектор Репета */
+/* html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+} */
+
+/* универсальный селектор */
+.test-container{
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    outline: 2px solid tomato;   
+
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+*,h1,h2,h3,h4,h5,h6,p,ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0px;
+
+    /* УТИЛИТЫ */
+}
+:root{
+    --primary-text-color: #212121;
+    --tittle-text-color: #757575;
+    --accent-color: #2196f3;
+    --primary-bg-color: #ffffff;
+    --background-color: #e5e5e5;
+    --background-color-second: #2f303a;
+    --background-color-third: #f5f4fa;
+    --contact-color: rgba(255, 255, 255, 0.6); 
+    --main-font: 'Roboto', sans-serif;
+    --accent-font: 'Raleway', sans-serif;
+
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    outline: 2px solid tomato;   
+}
+body{
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    font-family: var(--main-font);
+}
+header {
+    background-color: var(--primary-bg-color);
+}
+main{
+    background-color: var(--primary-bg-color);
+}
+a {
+    color: inherit;
+    text-decoration: none;
+} 
+ul{
+    list-style: none;
+}
+
+
+/* LOGO */
+
+.logo{
+    margin-right: 93px;
+}
+
+.logo-blue {
+    font-family: var(--accent-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+.logo-black{
+    font-family: var(--accent-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.logo-white{
+    font-family: var(--accent-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+    color: var(--primary-bg-color)  
+}
+
+/* ------------------MENU INDEX HEADER------------------- */
+header{
+    background-color: var(--primary-bg-color);
+}
+.nav-list{
+    display: flex;
+}   
+.nav-list .item:not(:last-child){
+    margin-right: 50px;
+} 
+.nav-list .link {
+    display: block;
+    padding: 32px 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.02em; 
+    text-transform: capitalize;
+}
+
+
+/* contact-header */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+
+.tel-nav{
+    display: flex;
+    margin-left: auto;      /*запомнить*/
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.02em; 
+    color: var(--tittle-text-color);
+}
+
+.tel-nav .item + .item{
+    margin-left: 50px;
+}
+.tel-nav .link{
+    display: block;
+    padding: 32px 0px;   
+}
+.tel-nav a:hover,
+.tel-nav a:focus{
+    color: var(--accent-color);
+}
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a:active{
+    color: var(--accent-color);
+}
+.current {
+    color: var(--accent-color);
+}
+
+
+/* -------------HERO--------------- */
+.hero{
+    padding: 94px 0px;
+background-color: var(--background-color-second);
+color: var(--primary-bg-color);
+text-align: center;
+
+}
+
+.hero-title{
+    margin-bottom: 30px;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36em;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--primary-bg-color);  
+}
+/* button hero */
+.hero-button{
+    font-family: var(--main-font);
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus{
+    color: var(--primary-text-color);
+}
+/*------------SOFTSKILL-------------- */
+.softskill{
+    padding: 94px 0px;
+    background-color: var(--primary-bg-color);
+
+}
+.softskill h3{
+margin-bottom: 10px;
+font-size: 14px;
+line-height: 1.14em;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primary-text-color);
+}
+.softskill p{
+font-size: 14px;
+line-height: 1.71em;
+letter-spacing: 0.03em;
+color:var(--tittle-text-color);
+}
+
+.softskill-list{
+    display: flex;
+}
+.softskill-text{
+    width: 270px;
+}
+
+.softskill-text:not(:last-child){
+    margin-right: 30px;
+
+}
+
+
+
+/* --------------DO------------------- */
+.do{
+    padding-bottom: 94px;
+    background-color: var(--primary-bg-color);
+}
+.do h2{
+    margin-bottom: 50px;
+font-size: 36px;
+line-height: 1.16em;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--primary-text-color);
+}
+.do-list{
+    display: flex;
+}
+.do-pic:not(:last-child){
+    margin-right: 30px;
+}
+
+/* ---------------TEAM---------------- */
+.team{
+    padding: 94px 0px;
+    background-color: var(--background-color-third);
+}
+.team h2{
+margin-bottom: 50px;
+font-size: 36px;
+line-height: 1.16em;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--primary-text-color);
+}
+.team-list{
+    display: flex;
+}
+
+.team-img{
+    display: block;
+    max-width: 100%;
+}
+.team-item:not(:last-child){
+margin-right: 30px;
+}
+.employee-info{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding: 30px 50px;
+    background: var(--primary-bg-color);
+}
+.employee-info h3{
+margin-bottom: 10px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18em;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--primary-text-color);
+}
+.employee-info p{
+font-size: 16px;
+line-height: 1.18em;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--tittle-text-color);
+}
+
+/*------------ PORTFOLIO --------------------*/
+.portfolio-menu{
+    padding: 94px 0px;
+}
+
+
+.button-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.button-list > .item:not(:last-child){
+    margin-right: 8px;
+}
+
+
+
+
+.button {
+    background: var(--background-color);
+    border-radius: 4px;
+    padding: 6px 22px;
+    /* min-width: 130px; ставим еcли нехотим что бы было переполнение */
+    text-align: center;
+    border: 1px solid transparent;
+    border-color: var(--accent-color);
+    cursor: pointer;
+  }
+  
+  .button:hover,
+  .button:focus {
+    background: var(--accent-color);
+    color: var(--primary-bg-color);
+  }
+/* -------------------skill----------------- */
+    .skill-list{
+    display: flex;
+    flex-wrap: wrap;
+
+    }
+.skill-item{
+    /* width: calc((100%-60px ) / 3); */
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: var(--primary-bg-color);
+    
+}
+ .skill-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+.skill-item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  } 
+
+.skill-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+  .slill-link{
+    display: block;
+}
+.skill-info{
+padding: 20px 24px;
+border-right: 1px solid #eeeeee;
+border-bottom: 1px solid #eeeeee;
+border-left: 1px solid #eeeeee;
+}
+    .skill-info h3{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18em;
+    letter-spacing: 0.03em;
+    color:var(--primary-text-color);
+    }
+    .skill-info p{
+    font-size: 16px;
+    line-height: 1.18em;
+    letter-spacing: 0.03em;
+    color: var(--tittle-text-color);
+    }
+    /* ---------------FOOTER-------------- */
+.footer{
+    background-color:var(--background-color-second);
+    padding: 60px 0px;
+}
+.logo-footer{
+    margin-bottom: 20px;
+}
+
+.address-footer a:hover,
+.address-footer a:focus{
+    color: var(--accent-color);
+}
+.address-item:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+    color: var(--primary-bg-color);
+  }
+.contact{
+font-style: normal;
+font-size: 14px;
+line-height: 1.71em;
+letter-spacing: 0.03em;
+color: var(--contact-color);
+}
+/* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке */
