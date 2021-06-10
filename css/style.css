@@ -201,10 +201,12 @@ color: var(--primary-bg-color);
     font-family: var(--main-font);
     background-color: var(--accent-color);
     color: var(--primary-bg-color);
+    font-weight: 700;
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
     text-align: center;
+    letter-spacing: 0.06em;
     border: 1px solid transparent;
     cursor: pointer;
 }
@@ -563,6 +565,12 @@ line-height: 1.71em;
 letter-spacing: 0.03em;
 color: var(--contact-color);
 }
+.contact-footer{
+  margin-right: 70px;
+}
+.contact-footer li{
+  margin-bottom: 9px;
+}
 
 /* ----------социальные сети подвал--------------- */
 .footer-title{
@@ -584,38 +592,4 @@ color: var(--contact-color);
     fill:var(--primary-bg-color)
 }
 
-
-
-
-
-
-
-/* .footer-oll {
-    display: flex;
-    align-items: baseline;
-  }
-.footer-social-link {
-    text-transform: uppercase;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-  }
-  
-
-  
-  .footer-list {
-    display: flex;
-    margin-top: 0px;
-    padding: 0px;
-  }
-  
-  .social-link {
-    margin-right: 10px;
-  }
-  
-  .social-icon .icon-footer {
-    fill: #ffffff;
-  } */
 /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке */
