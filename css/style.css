@@ -47,7 +47,7 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0px 15px;
-    outline: 2px solid tomato;   
+    /* outline: 2px solid tomato;    */
 }
 body{
     background-color: var(--background-color);
@@ -103,7 +103,7 @@ ul{
 /* ------------------MENU INDEX HEADER------------------- */
 header{
     background-color: var(--primary-bg-color);
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 .nav-list{
     display: flex;
